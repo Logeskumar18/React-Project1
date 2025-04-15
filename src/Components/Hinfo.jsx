@@ -1,14 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import img1 from 'H:/React/project1/src/assets/Background.png';
-import heroImg from 'H:/React/project1/src/assets/hero-image-01.png';
-import Video from 'H:/React/project1/src/assets/video.mp4';
 import { Button1 } from './Button1';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCirclePlay } from '@fortawesome/free-solid-svg-icons';
 import Button2 from './Button2';
 
 const Hinfo = () => {
-    const [showVideo, setShowVideo] = useState(false);
+    
 
     const headerStyle = {
         animation: "colorChange 4s infinite",
@@ -23,26 +19,12 @@ const Hinfo = () => {
     }
   `;
 
-    const handleImageClick = () => {
-        setShowVideo(true);
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
+   
 
     return (
         <>
 
             <style>{keyframes}</style>
-
-
-            {showVideo && (
-                <div className="position-fixed top-0 start-0 w-100  p-4 z-3" style={{ height: 'auto' }}>
-                    <video controls autoPlay className="w-100 rounded-4">
-                        <source src={Video} type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            )}
-
 
             <main
                 className="d-flex justify-content-center text-center pb-5"
@@ -67,22 +49,7 @@ const Hinfo = () => {
             </main>
 
 
-            <div className="d-flex justify-content-center position-relative">
-                <img
-                    src={heroImg}
-                    alt="Hero"
-                    className="img-fluid w-75 rounded-5"
-                    style={{ cursor: 'pointer' }}
-                    onClick={handleImageClick}
-                />
-                <div className='position-absolute top-50 start-50 translate-middle text-white '>
-                    <h5 style={{ cursor: 'pointer' }}>
-                        <FontAwesomeIcon icon={faCirclePlay} size="1x" className="me-2" style={{color: '#5361dc'}}/>
-                        Watch Demo
-                    </h5>
-                </div>
-
-            </div>
+          
         </>
     );
 };

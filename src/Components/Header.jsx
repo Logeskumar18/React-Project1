@@ -7,7 +7,7 @@ import Button2 from './Button2'
 export const Header = () => {
     return (
 
-        <div className="d-flex justify-content-center">
+        <div className="d-flex justify-content-center align-item-center">
             <header
                 className="input-group w-75 mx-0 rounded-5 mt-4 align-middle border border-black"
                 style={{ backgroundColor: "#0c1725" }}
