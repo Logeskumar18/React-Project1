@@ -1,0 +1,10 @@
+* {
+    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: oklch(.13 .028 261.692);
+    color: white;
+}
