@@ -4,9 +4,10 @@ import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import { Header } from './Components/Header';
-import { IVComp } from './Components/IVComp';
+import { Home } from './Components/Home';
 import { Signin } from './Components/Signin';
 import { Register } from './Components/Register';
+import { ResetPass } from './Components/ResetPass';
 
 createRoot(document.getElementById('root')).render(
   <>
@@ -14,9 +15,10 @@ createRoot(document.getElementById('root')).render(
       <Header />
       
       <Routes>
-        <Route path='/' element={ <IVComp />} />
+        <Route path='/' element={ <Home />} />
         <Route path="/Signin" element={<Signin />} />
         <Route path="/Register" element={<Register />} />
+        <Route path='/ResetPass' element={<ResetPass/>}/>
       </Routes>
      
     </BrowserRouter>

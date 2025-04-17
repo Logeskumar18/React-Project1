@@ -1,9 +1,16 @@
 import React from 'react'
 import { Button1 } from './Button1';
+import { useNavigate } from 'react-router-dom';
 import Button2 from './Button2';
 import img1 from 'H:/React/project1/src/assets/Background.png';
 
 export const Register = () => {
+    const navigate = useNavigate();
+
+    const goSignin = () =>{
+        navigate('/Signin')
+    }
+
     return (
         <div className="container  d-flex justify-content-center" style={{
             backgroundImage: `url(${img1})`,
@@ -45,11 +52,11 @@ export const Register = () => {
                 </div>
 
                 <div className="">
-                    <Button1 name="Sign In with Google" />
+                    <Button2 name="Sign In with Google" />
                 </div>
 
                 <div className='d-flex mt-4 ms-3 '> 
-                        <p>Already have an account?</p><span href="">Sign In</span>
+                        <p>Already have an account?</p> <span onClick={goSignin}>Sign In</span>
                     </div>
 
             </div>

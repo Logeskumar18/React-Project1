@@ -7,11 +7,6 @@ import '../index.css';
 
 const Hinfo = () => {
     
-
-    
-
-   
-
     return (
         <>
 

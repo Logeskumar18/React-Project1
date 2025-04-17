@@ -1,10 +1,19 @@
 import React from 'react';
 import '../index.css';
 import Button2 from './Button2';
+import { useNavigate } from 'react-router-dom';
 import img1 from 'H:/React/project1/src/assets/Background.png';
 import { Button1 } from './Button1';
 
 export const Signin = () => {
+    const navigate = useNavigate();
+
+    const gosignup = () => {
+        navigate('/Register')
+    }
+    const goreset = () => {
+        navigate("/ResetPass")
+    }
     return (
         <>
             <div className="container  d-flex justify-content-center" style={{
@@ -17,22 +26,22 @@ export const Signin = () => {
 
 
                     <div className="mb-3">
-                        <label htmlFor="e-mail" className="form-label" style={{color: '#7b8bab'}}>Email</label>
+                        <label htmlFor="e-mail" className="form-label" style={{ color: '#7b8bab' }}>Email</label>
                         <input type="email" className="form-control" style={{ backgroundColor: "#0c1725" }} id="e-mail" placeholder="Enter your email" />
                     </div>
 
                     {/* Password Field */}
                     <div className="mb-3">
                         <div className="d-flex justify-content-between">
-                            <label htmlFor="password" className="form-label" style={{color: '#7b8bab'}}>Password</label>
-                            <a href="#" className="text-decoration-none small text-muted">Forgot?</a>
+                            <label htmlFor="password" className="form-label" style={{ color: '#7b8bab' }}>Password</label>
+                            <span className="text-decoration-none small text-muted" onClick={goreset}>Forgot?</span>
                         </div>
                         <input type="password" style={{ backgroundColor: "#0c1725" }} className="form-control" id="password" placeholder="Enter your password" />
                     </div>
 
                     {/* Sign In Button */}
                     <div className="mt-4 d-flex justify-content-center ">
-                        <Button2  name="Sign In" />
+                        <Button2 name="Sign In" />
                     </div>
 
                     {/* Divider */}
@@ -46,8 +55,8 @@ export const Signin = () => {
                     <div className="">
                         <Button1 name="Sign In with Google" />
                     </div>
-                    <div className='d-flex mt-4 ms-3 '> 
-                        <p>Don't you have an account?</p><span href="">Sign Up</span>
+                    <div className='d-flex mt-4 ms-3 '>
+                        <p>Don't you have an account?</p><span onClick={gosignup}>Sign Up</span>
                     </div>
                 </div>
             </div>
