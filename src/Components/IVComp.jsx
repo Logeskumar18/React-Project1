@@ -3,6 +3,7 @@ import heroImg from 'H:/React/project1/src/assets/hero-image-01.png';
 import Video from 'H:/React/project1/src/assets/video.mp4';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCirclePlay } from '@fortawesome/free-solid-svg-icons';
+import Hinfo from './Hinfo';
 
 export const IVComp = () => {
   const [showVideo, setShowVideo] = useState(false);
@@ -15,6 +16,8 @@ export const IVComp = () => {
 
 return (
   <>
+  <Hinfo />
+   
     {showVideo && (
   <div
     className="position-fixed top-0 start-0 w-100 h-100  z-3 d-flex justify-content-center align-items-center"
@@ -33,7 +36,7 @@ return (
 )}
 
 
-    <div className="d-flex justify-content-center position-relative">
+    <div className="d-flex justify-content-center position-relative opacity-50 mb-5">
       <img
         src={heroImg}
         alt="Hero"
@@ -41,7 +44,7 @@ return (
         style={{ cursor: 'pointer' }}
         
       />
-      <div className='position-absolute top-50 start-50 translate-middle text-white ' onClick={handleImageClick}>
+      <div className='position-absolute top-50 start-50 translate-middle text-white bg-black p-3 rounded-4' onClick={handleImageClick}>
         <h5 style={{ cursor: 'pointer' }}>
           <FontAwesomeIcon icon={faCirclePlay} size="1x" className="me-2" style={{ color: '#5361dc' }} />
           Watch Demo

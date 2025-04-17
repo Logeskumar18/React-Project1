@@ -8,3 +8,13 @@ body{
     background-color: oklch(.13 .028 261.692);
     color: white;
 }
+
+.animateHeading{
+    animation: colorChange 4s infinite;
+    font-size: 45px;
+}
+@keyframes colorChange {
+    0%   { color: #d7dded; }
+    50%  { color: #d0ddfd; }
+    100% { color: #a6bcff; }
+  }

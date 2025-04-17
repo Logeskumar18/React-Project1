@@ -2,29 +2,18 @@ import React from 'react';
 import img1 from 'H:/React/project1/src/assets/Background.png';
 import { Button1 } from './Button1';
 import Button2 from './Button2';
+import '../index.css';
+
 
 const Hinfo = () => {
     
 
-    const headerStyle = {
-        animation: "colorChange 4s infinite",
-        fontSize: '45px',
-    };
-
-    const keyframes = `
-    @keyframes colorChange {
-      0%   { color: #d7dded; }
-      50%  { color: #d0ddfd; }
-      100% { color: #a6bcff; }
-    }
-  `;
+    
 
    
 
     return (
         <>
-
-            <style>{keyframes}</style>
 
             <main
                 className="d-flex justify-content-center text-center pb-5"
@@ -35,7 +24,7 @@ const Hinfo = () => {
                 }}
             >
                 <div className="w-75 font-bolder">
-                    <h1 style={headerStyle} className="pt-5">
+                    <h1  className="animateHeading pt-5">
                         AI-driven tools for product teams
                     </h1>
                     <h5 style={{ color: '#707ba4' }}>
