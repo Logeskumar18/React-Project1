@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import heroImg from 'H:/React/project1/src/assets/hero-image-01.png';
-import Video from 'H:/React/project1/src/assets/video.mp4';
+import heroImg from '/src/assets/hero-image-01.png';
+import Video from '/src/assets/video.mp4';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCirclePlay } from '@fortawesome/free-solid-svg-icons';
 
@@ -36,7 +36,7 @@ export const IVComp = () => {
   )}
   
   
-      <div className="d-flex justify-content-center position-relative opacity-50 mb-5">
+      <div className="d-flex justify-content-center position-relative opacity-50 ">
         <img
           src={heroImg}
           alt="Hero"

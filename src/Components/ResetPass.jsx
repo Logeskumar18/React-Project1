@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button1 } from './Button1';
-import img1 from 'H:/React/project1/src/assets/Background.png';
+import img1 from "/src/assets/Background.png";
 
 export const ResetPass = () => {
     return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import img1 from 'H:/React/project1/src/assets/Background.png';
+import img1 from "/src/assets/Background.png";
 import { Button1 } from './Button1';
 import Button2 from './Button2';
 import '../index.css';

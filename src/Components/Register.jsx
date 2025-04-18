@@ -2,7 +2,7 @@ import React from 'react'
 import { Button1 } from './Button1';
 import { useNavigate } from 'react-router-dom';
 import Button2 from './Button2';
-import img1 from 'H:/React/project1/src/assets/Background.png';
+import img1 from "/src/assets/Background.png";
 
 export const Register = () => {
     const navigate = useNavigate();
