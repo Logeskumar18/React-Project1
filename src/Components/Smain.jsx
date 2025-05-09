@@ -9,11 +9,13 @@ const Smain = () => {
                 backgroundSize: "cover",
                 backgroundPosition: "center",
             }}>
-                 <div className="d-flex align-items-center w-25">
+                <div className="d-flex justify-content-center text-center">
+                <div className="d-flex align-items-center w-25">
                     <hr className="flex-grow-1" />
                     <h5 className="mx-2 text-muted">Tailored Workflows</h5>
                     <hr className="flex-grow-1" />
 
+                </div>
                 </div>
                 <h1 className="animateHeading ">
                     Map your product journey
