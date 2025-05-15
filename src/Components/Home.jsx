@@ -3,6 +3,7 @@ import { IVComp } from './IVcom'
 import Hinfo  from './Hinfo'
 import Smain from "./Smain";
 import { Cards } from './Cards';
+import AdvanceControl from './AdvanceControl';
 
 export const Home = () => {
   return (
@@ -11,6 +12,7 @@ export const Home = () => {
       <IVComp/>
       <Smain />
       <Cards />
+      <AdvanceControl />
     </>
   )
 }
