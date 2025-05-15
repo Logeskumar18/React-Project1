@@ -4,6 +4,9 @@ import Hinfo  from './Hinfo'
 import Smain from "./Smain";
 import { Cards } from './Cards';
 import AdvanceControl from './AdvanceControl';
+import ImgComp from './ImgComp';
+import Articles from './Articles';
+import { Lmain } from './Lmain';
 
 export const Home = () => {
   return (
@@ -13,6 +16,9 @@ export const Home = () => {
       <Smain />
       <Cards />
       <AdvanceControl />
+      <ImgComp />
+      <Articles />
+      <Lmain />
     </>
   )
 }
