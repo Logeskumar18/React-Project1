@@ -7,6 +7,8 @@ import AdvanceControl from './AdvanceControl';
 import ImgComp from './ImgComp';
 import Articles from './Articles';
 import { Lmain } from './Lmain';
+import { Join } from './Join';
+import Footer from './Footer';
 
 export const Home = () => {
   return (
@@ -19,6 +21,8 @@ export const Home = () => {
       <ImgComp />
       <Articles />
       <Lmain />
+      <Join />
+      <Footer />
     </>
   )
 }
